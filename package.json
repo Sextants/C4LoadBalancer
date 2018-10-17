@@ -1,0 +1,28 @@
+{
+  "name": "c4loadbalancer",
+  "version": "0.0.1",
+  "description": "C4Framework Load Balancer",
+  "main": "out",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sextants/C4Configger.git"
+  },
+  "keywords": [
+    "C4Framework",
+    "Load",
+    "Balancer"
+  ],
+  "author": "Sextant",
+  "bugs": {
+    "url": "https://github.com/Sextants/C4Configger.git"
+  },
+  "dependencies": {
+    "@types/hashring": "^1.0.0",
+    "@types/node": "^9.4.7",
+    "c4utils": "0.0.2",
+    "hashring": "^3.2.0"
+  }
+}
