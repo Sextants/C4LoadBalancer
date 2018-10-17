@@ -1,5 +1,5 @@
 import BalancerInstance from './BalancerInstance';
-import HashRing = require('hashring');
+var HashRing = require('hashring');
 
 export interface ConsistentHashBalancerOptions {
     VNodeCount  ?: number | 40,
@@ -13,7 +13,7 @@ export interface ConsistentHashBalancerOptions {
  */
 export default class ConsistentHashBalancer extends BalancerInstance {
 
-    private m_HashRing : HashRing | null;
+    private m_HashRing : any;
 
     constructor() {
         super();
@@ -95,7 +95,7 @@ export default class ConsistentHashBalancer extends BalancerInstance {
         if (null === this.m_HashRing)
             return;
         for (let key in servers) {
-            if ((<HashRing>this.m_HashRing).has(key)) {
+            if ((<any>this.m_HashRing).has(key)) {
                 this.m_HashRing.remove(key);
             }
             this.m_HashRing.add(servers[key])
