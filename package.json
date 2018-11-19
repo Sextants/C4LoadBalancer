@@ -1,6 +1,6 @@
 {
   "name": "c4loadbalancer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "C4Framework Load Balancer",
   "main": "out",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@types/node": "^9.4.7",
-    "c4utils": "0.0.2",
+    "c4utils": "0.0.3",
     "hashring": "^3.2.0"
   }
 }
